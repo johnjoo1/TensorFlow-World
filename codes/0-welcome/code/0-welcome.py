@@ -26,7 +26,7 @@ welcome = tf.constant('Welcome to TensorFlow world!')
 # Run the session
 with tf.Session() as sess:
     writer = tf.summary.FileWriter(os.path.expanduser(log_dir), sess.graph)
-    print("output: ", sess.run(welcome))
+    print("My output: ", sess.run(welcome))
 
 # Closing the writer.
 writer.close()
